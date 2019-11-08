@@ -2,6 +2,7 @@
 Data structures in Go.
 
 ```go
+// stack3.go
 package main
 
 import (
