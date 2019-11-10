@@ -28,10 +28,11 @@ func (s *Stack) Size() int {
   return len(s.slice)
 }
 
-func sort(xs []int)  {
-  var myslice []int = xs
+func sort(xs []int, z int)  {
+  myslice := make([]int, z)
+  copy(myslice, xs)
   var firstNumber, secondNumber int
-  var size int = len(xs)
+  var size int = z
   var t int = 1
   var count int
 
@@ -66,7 +67,7 @@ func main() {
     case 1: s.Push()
     case 2: s.Pop()
     case 3: fmt.Println(s.slice)
-    case 4: sort(s.slice)
+    case 4: sort(s.slice, s.Size())
     case 5: break myloop
     default: fmt.Println("Invalid option.")
    }
