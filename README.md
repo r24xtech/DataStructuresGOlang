@@ -1,6 +1,9 @@
 # DataStructuresGOlang
 Data structures in Go.
 
+* If the struct has a pointer receiver on some of its methods, it is better to use it for the rest of the methods because it enables better consistency and predictability for the struct behaviors.
+* (s Stack) vs. (s *Stack): If you want to modify the data of a receiver from the method, the receiver must be a pointer.
+
 ```go
 // stack3.go
 package main
