@@ -123,7 +123,8 @@ func main() {
 ```
 
 ```go
-//y.go
+// y.go
+// s.size not being used, but it might be useful
 package main
 
 import (
