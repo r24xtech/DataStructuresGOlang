@@ -122,6 +122,8 @@ func main() {
 }
 ```
 
+<hr>
+
 ```go
 // y.go
 // s.size not being used, but it might be useful
