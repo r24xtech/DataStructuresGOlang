@@ -544,6 +544,7 @@ func (l *List) RemoveAt() {
         }
         l.head.previous.next = l.head.next
         l.head.next.previous = l.head.previous
+        // l.head = nil //?? it works without it!
         l.size--
         //l.RemoveFront()
         l.head = keep
